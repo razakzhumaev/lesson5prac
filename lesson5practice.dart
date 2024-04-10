@@ -1,7 +1,9 @@
 void main(List<String> args) {
 //   1) Если переменная a равна 10, то выведите 'Верно', иначе выведите
 // 'Неверно'.
+// Razak commit
   int a = 9;
+
   if (a == 10) {
     print('Верно');
   } else if (a != 10) {
@@ -11,6 +13,7 @@ void main(List<String> args) {
 // 2) Если переменная a равна нулю, то выведите 'Верно', иначе выведите
 // 'Неверно'. Проверьте работу скрипта при a, равном 1, 0, -3.
   int b = 0;
+
   if (b == 0) {
     print('Верно');
   } else {
@@ -145,7 +148,7 @@ void main(List<String> args) {
     print('Неверно');
   }
 
-//   8) Если переменная a равна 'test', то выведите 'Верно', иначе выведите
+//   8) Если переменная a равна 'test', то выведите 'Верно', иначе выведите  // по условию через dynamin надо сделать
 // 'Неверно'. Проверьте работу скрипта при a, равном 'test', 'тест', 3.
   String h = 'test';
   if (h == 'test') {
@@ -173,6 +176,9 @@ void main(List<String> args) {
   String i = '1';
   if (i == '1') {
     print('Верно');
+    if (i.runtimeType == String) {
+      print('type is String');
+    }
   } else {
     print('Неверно');
   }
@@ -180,6 +186,9 @@ void main(List<String> args) {
   int i1 = 1;
   if (i1 == '1') {
     print('Верно');
+    if (i1.runtimeType == String) {
+      print('type is String');
+    }
   } else {
     print('Неверно');
   }
@@ -187,7 +196,17 @@ void main(List<String> args) {
   int i2 = 3;
   if (i2 == '1') {
     print('Верно');
+    if (i2.runtimeType == String) {
+      print('type is String');
+    }
   } else if (i2 != '1') {
+    print('Неверно');
+  }
+
+  var p = '1';
+  if (p == '1' && p.runtimeType == String) {
+    print('Верно');
+  } else {
     print('Неверно');
   }
 }
